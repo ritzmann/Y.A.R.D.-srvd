@@ -1,7 +1,7 @@
-AC_INIT
-AC_CONFIG_SRCDIR([configure.in])
+AC_INIT([yardsrvd], [0.1])
+AC_CONFIG_SRCDIR([src/yardserial.c])
 
-AM_INIT_AUTOMAKE(yardsrvd, 0.1)
+AM_INIT_AUTOMAKE
 
 AC_LANG([C])
 AC_PROG_CC

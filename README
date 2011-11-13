@@ -1,0 +1,25 @@
+-- INTRODUCTION --------------------------------------------------------------
+
+yardsrvd is a daemon that enables multiple client connections to communicate
+with the YARD device developed by A. Weber (see eldo.gotdns.com/yard for 
+further information about the hardware). This is done using an UNIX domain
+socket.
+
+
+-- FEATURES ------------------------------------------------------------------
+
++ Runs as a daemon process
++ Configuration via yardsrvd.conf
++ Up to 5 simultaneous client connections
++ Supports YARD firmware version 4 and up
+
+
+-- INSTALLATION --------------------------------------------------------------
+
+Refer to the INSTALL file included with this archive for installation
+instructions.
+
+
+-- KNOWN BUGS ----------------------------------------------------------------
+
+Hopefully nothing ;)

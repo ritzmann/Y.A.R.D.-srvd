@@ -1,0 +1,10 @@
+#!/bin/bash
+# Installs YARD server init script
+
+
+# Copy YARD server init script to destination
+cp ./yardsrvd-init.LSB /etc/init.d/yardsrvd
+
+# Install YARD server init script
+update-rc.d -f yardsrvd remove
+update-rc.d yardsrvd defaults 40 90

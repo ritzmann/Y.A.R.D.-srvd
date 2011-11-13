@@ -1,6 +1,6 @@
 AC_INIT([yardsrvd], [0.1])
 AC_CONFIG_SRCDIR([src/yardserial.c])
-
+AC_CONFIG_MACRO_DIR([m4])
 AM_INIT_AUTOMAKE
 
 AC_LANG([C])

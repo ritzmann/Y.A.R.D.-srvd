@@ -169,8 +169,10 @@ static VOID main_vExitDaemon(VOID)
    // Close all open file descriptors
    do
    {
-      close(ptCurDesc->nSockFd);
-      ptCurDesc = ptCurDesc->ptNext;
+      if (ptCurDesc != NULL) {
+         close(ptCurDesc->nSockFd);
+         ptCurDesc = ptCurDesc->ptNext;
+      }
    } while (ptCurDesc != ptTailDesc);	
 
 	// Close and unlink socket
